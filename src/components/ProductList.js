@@ -11,6 +11,7 @@ import {
   subtractQuantity
 } from '../actions';
 import { getVisibleProducts } from '../reducers/product_reducer';
+import cartReducer from '../reducers/cart_reducer';
 const ProductList = ({ products }) => {
   return (
     <div>
@@ -25,7 +26,7 @@ const ProductList = ({ products }) => {
         </MDBTableHead>
         <tbody>
           {products.map(product => (
-            <Product product={product} />
+            <Product product={product} remove={id => removeItem(id)} />
           ))}
         </tbody>
       </MDBTable>
@@ -75,7 +76,7 @@ const ProductList = ({ products }) => {
 };
 const mapStateToProps = (state, ownProps) => {
   return {
-    products: getVisibleProducts(state.products)
+    products: cartReducer(state.products)
   };
 };
 const mapDispatchToProps = dispatch => {

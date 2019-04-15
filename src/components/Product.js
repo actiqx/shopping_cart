@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EditProductModal from './EditProductModal';
 
-const Product = ({ product }) => {
+const Product = ({ product, remove }) => {
   const initialState = {
     modal: false
   };
@@ -30,7 +30,12 @@ const Product = ({ product }) => {
                 className="btn btn-link"
                 onClick={editModalOpen}
               />
-              <input type="button" value="X Remove" className="btn btn-link" />
+              <input
+                type="button"
+                value="X Remove"
+                className="btn btn-link"
+                onClick={() => remove(product.id)}
+              />
               <input
                 type="button"
                 value="SAVE FOR LATER"
