@@ -1,0 +1,42 @@
+[{
+        "id": 1,
+        "title": "COTTON TSHIRT",
+        "style": " MS13KT1906",
+        "color": "blue",
+        "image": "",
+        "size": "S",
+        "mrp": 11.00,
+        "disc_price": 0
+
+    },
+    {
+        "id": 2,
+        "title": "PRINT GIRLS TEE",
+        "style": " MS13KT1906",
+        "color": "pink",
+        "image": "",
+        "size": "S",
+        "mrp": 17.00,
+        "disc_price": 0
+    },
+    {
+        "id": 3,
+        "title": "FLORAL PATTERN SHIRT",
+        "style": " MS13KT1906",
+        "color": "blue",
+        "image": "",
+        "size": "S",
+        "mrp": 21.00,
+        "disc_price": 9.00
+    },
+    {
+        "id": 4,
+        "title": "CHECK PATTERN TSHIRT",
+        "style": " MS13KT1906",
+        "color": "red",
+        "image": "",
+        "size": "M",
+        "mrp": 22.00,
+        "disc_price": 0
+    }
+]
