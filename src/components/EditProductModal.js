@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  MDBContainer,
-  MDBBtn,
-  MDBModal,
-  MDBModalBody,
-  MDBModalHeader,
-  MDBModalFooter
-} from 'mdbreact';
+import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
 const EditProductModal = props => {
   const { product, isOpen, toggle } = props;
   return (
